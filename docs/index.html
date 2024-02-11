@@ -1,0 +1,359 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><title>Maximiliano Van Megroot - Portafolio</title><meta name="title" property="og:title" content="Maximiliano Van Megroot - Portafolio"><meta name="description" property="og:description" content="Contrata a Maximiliano para crear tu aplicación web única. Programador/Desarrollador Web Full Stack."><meta name="image" property="og:image" content="https://maxiv95.github.io/images/banner.webp"><meta property="og:type" content="website"><meta property="og:url" content="https://maxiv95.github.io/"><meta property="fb:app_id" content="1798923197"><meta property="fb:admins" content="1798923197"><meta name="author" content="Maximiliano Van Megroot"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="./favicon.svg"><meta name="generator" content="Astro v4.12.2"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="./assets/index.K0z_QWA-.css"><script type="module" src="./assets/hoisted.B6ijB05N.js"></script></head> <body class="relative text-black/80 dark:text-white"> <div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
+      bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(255,255,0,0.1),rgba(0,0,255,0.1))]
+      dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,0,255,0.4),rgba(0,0,255,0.09))]"></div> <header id="VanMeHeader" class="mx-auto mt-2 w-full top-0 fixed z-10 flex items-center justify-center" data-astro-cid-3ef6ksr2> <nav class="px-2 flex gap-1 justify-center items-center font-medium rounded-full text-sm md:text-xl" data-astro-cid-3ef6ksr2> <a class="p-2 hover:text-blue-500 dark:hover:text-yellow-400" aria-label="home" href="/#home" data-astro-cid-3ef6ksr2> Home </a><a class="p-2 hover:text-blue-500 dark:hover:text-yellow-400" aria-label="experience" href="/#experience" data-astro-cid-3ef6ksr2> Experience </a><a class="p-2 hover:text-blue-500 dark:hover:text-yellow-400" aria-label="projects" href="/#projects" data-astro-cid-3ef6ksr2> Projects </a><a class="p-2 hover:text-blue-500 dark:hover:text-yellow-400" aria-label="about" href="/#about" data-astro-cid-3ef6ksr2> About </a> <div class="relative ml-1 mr-1"> <button id="theme-toggle-btn" aria-label="Change theme" class="appearance-none border-none flex hover:scale-125 transition"> <svg id="light" class="theme-toggle-icon size-4 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path></svg> <svg id="dark" class="theme-toggle-icon absolute size-4 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path></svg> </button> </div> <script>
+	const getThemePreference = () => {
+		if (typeof localStorage !== "undefined") {
+			return localStorage.getItem("theme") ?? "dark";
+		}
+		return window.matchMedia("(prefers-color-scheme: dark)").matches
+			? "dark"
+			: "light";
+	};
+
+	const updateTheme = () => {
+		const themePreference = getThemePreference();
+		const isDark = themePreference === "dark";
+		document.querySelectorAll(".theme-toggle-icon").forEach((element) => {
+			element.style.scale = element.id === themePreference ? "1" : "0";
+		});
+		document.documentElement.classList[isDark ? "add" : "remove"]("dark");
+	};
+
+	const toggleTheme = () => {
+		const currentTheme = getThemePreference();
+		const newTheme = currentTheme === "dark" ? "light" : "dark";
+		localStorage.setItem("theme", newTheme);
+		updateTheme();
+	};
+
+	document
+		.getElementById("theme-toggle-btn")
+		.addEventListener("click", toggleTheme);
+
+	updateTheme();
+</script> </nav> <a id="goHome" aria-label="home" href="/#home" class="fixed bottom-4 right-4 z-10 py-2 px-2 hidden
+		border
+		rounded-full
+		text-gray-200
+		bg-blue-500/90
+		border-gray-400
+		hover:bg-blue-500/70
+		dark:text-black
+		dark:bg-yellow-300/90
+		dark:hover:bg-yellow-300/70" data-astro-cid-3ef6ksr2> <svg data-astro-cid-3ef6ksr2 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 11l5 -5l5 5"></path><path d="M7 17l5 -5l5 5"></path></svg> </a> </header>    <main class="px-4"> <section id="home" data-section="home" class="section pt-[10rem] pb-[7rem] md:pt-[14rem] md:pb-[11rem] flex justify-center w-full mx-auto container md:max-w-2xl lg:max-w-4xl">  <div> <div class="mb-4 flex gap-4 items-center justify-center"> <img class="rounded-full shadow-lg w-[6rem] h-[6rem] md:w-[8rem] md:h-[8rem] aspect-square" src="/images/photo.webp" alt="MaxiV95"> <h1 class="text-4xl md:text-7xl font-bold tracking-tight"> <div>Hi! I'm Maximiliano</div> <div>Van Megroot</div> </h1> </div> <div class="flex justify-center"> <div class="mt-5 text-xl text-gray-800 dark:text-gray-300 [&>p>strong]:font-semibold [&>p>strong]:text-blue-600 dark:[&>p>strong]:text-yellow-300"> <p class="mb-[8px] leading-6"> <span class="md:text-3xl whitespace-nowrap">Resolución de problemas,</span> <span class="md:text-3xl whitespace-nowrap"> atención al detalle.</span> </p> <p class="mb-[8px] leading-6 md:text-3xl"> <strong>Full Stack Web Developer</strong> - Córdoba, Argentina.
+</p> <p class="mb-[8px] leading-6"> <span class="md:text-3xl whitespace-nowrap">Especialización:</span> <span class="md:text-3xl whitespace-nowrap"> Centrado de &lt;div&gt;</span> </p> </div> </div> <nav class="mt-8 flex flex-wrap gap-3 md:gap-6 md:justify-center"> <a href="https://github.com/MaxiV95" target="_blank" rel="noopener noreferrer" class="max-w-fit
+	px-4
+	py-1
+	transition
+	inline-flex
+	items-center
+	justify-center
+	gap-2
+	border
+	rounded-full
+	group
+	md:text-2xl
+	bg-gray-100
+	border-gray-400
+	hover:text-white
+	hover:bg-gray-500
+	hover:border-gray-900
+	focus-visible:ring-blue-500/50
+	dark:bg-gray-800
+	dark:border-gray-600
+	dark:hover:bg-gray-500
+	dark:focus-visible:ring-yellow-300/80
+	focus:outline-none
+	focus-visible:outline-none
+	focus-visible:ring
+	focus-visible:ring-offset-2">  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
+GitHub
+ </a> <a href="/Maximiliano_Van_Megroot_CV.pdf" download="Maximiliano_Van_Megroot_CV-07-24.pdf" target="_blank" rel="noopener noreferrer" class="max-w-fit
+	px-4
+	py-1
+	transition
+	inline-flex
+	items-center
+	justify-center
+	gap-2
+	border
+	rounded-full
+	group
+	md:text-2xl
+	bg-gray-100
+	border-gray-400
+	hover:text-white
+	hover:bg-gray-500
+	hover:border-gray-900
+	focus-visible:ring-blue-500/50
+	dark:bg-gray-800
+	dark:border-gray-600
+	dark:hover:bg-gray-500
+	dark:focus-visible:ring-yellow-300/80
+	focus:outline-none
+	focus-visible:outline-none
+	focus-visible:ring
+	focus-visible:ring-offset-2">  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path><path d="M12 17v-6"></path><path d="M9.5 14.5l2.5 2.5l2.5 -2.5"></path></svg>
+CV
+ </a> <a href="mailto:maximilianovanmegroot@gmail.com" target="_blank" rel="noopener noreferrer" class="max-w-fit
+	px-4
+	py-1
+	transition
+	inline-flex
+	items-center
+	justify-center
+	gap-2
+	border
+	rounded-full
+	group
+	md:text-2xl
+	bg-gray-100
+	border-gray-400
+	hover:text-white
+	hover:bg-gray-500
+	hover:border-gray-900
+	focus-visible:ring-blue-500/50
+	dark:bg-gray-800
+	dark:border-gray-600
+	dark:hover:bg-gray-500
+	dark:focus-visible:ring-yellow-300/80
+	focus:outline-none
+	focus-visible:outline-none
+	focus-visible:ring
+	focus-visible:ring-offset-2">  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path><path d="M3 6l9 6l9 -6"></path><path d="M15 18h6"></path><path d="M18 15l3 3l-3 3"></path></svg>
+Send email
+ </a> <a href="https://www.linkedin.com/in/maximilianovanmegroot/" target="_blank" rel="noopener noreferrer" class="relative
+	rounded-full
+	cursor-pointer
+	focus-visible:ring-blue-500/50
+	dark:focus-visible:ring-yellow-300/80
+	focus:outline-none
+	focus-visible:outline-none
+	focus-visible:ring
+	focus-visible:ring-offset-2
+	overflow-hidden
+	max-w-fit
+	px-[0.1rem]
+	py-[0.1rem]
+	transition
+	inline-flex
+	items-center
+	justify-center
+	gap-2
+	group"> <span class="absolute inset-[-150%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"></span> <div class="whitespace-nowrap
+			backdrop-blur-3xl
+			max-w-fit
+			px-4
+			py-1
+			transition
+			inline-flex
+			items-center
+			justify-center
+			gap-2
+			rounded-full
+			group
+			md:text-2xl
+			bg-gray-100
+			hover:text-white
+			hover:bg-gray-500
+			dark:bg-gray-800
+			dark:hover:bg-gray-500">  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg>
+LinkedIn
+ </div> </a> </nav> </div>  </section> <svg class="size-8 animate-bounce flex w-full justify-center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M15 12h3.586a1 1 0 0 1 .707 1.707l-6.586 6.586a1 1 0 0 1 -1.414 0l-6.586 -6.586a1 1 0 0 1 .707 -1.707h3.586v-3h6v3z"></path><path d="M15 3h-6"></path><path d="M15 6h-6"></path></svg> <section id="experience" data-section="experience" class="section pt-16 pb-0 w-full mx-auto container md:max-w-2xl lg:max-w-4xl">  <h2 class="mb-6 flex gap-x-3 items-center text-3xl font-semibold"> <svg class="size-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path><path d="M12 12l0 .01"></path><path d="M3 13a20 20 0 0 0 18 0"></path></svg>
+Experience
+</h2> <ol> <li> <div class="mx-12 pb-10 relative grid md:grid-cols-5 md:gap-10 md:space-x-4 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:content-[''] before:border-blue-300/50 dark:before:border-white/30 animate"> <div class="pb-5 relative md:col-span-2"> <div class="top-0 sticky"> <span class="-left-[42px] absolute rounded-full text-5xl text-blue-500 dark:text-yellow-300">&bull;</span> <h3 class="text-xl font-bold text-blue-500 dark:text-yellow-300"> Full Stack Web Developer </h3> <h4 class="text-lg font-semibold text-gray-600 dark:text-white"> Innevo </h4> <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">abr. 2024 - actualidad</time> </div> </div> <p class="pb-4 relative flex flex-col gap-2 md:col-span-3 text-gray-600 dark:text-gray-300"> Trabajar en distintos proyectos internos de la empresa. Backend: Node.js, TypeScript, Express, Docker, MongoDB, PostgreSQL. Front-End: Angular 16, Angular 18. Crecer en habilidades de trabajo en equipo, metodología Scrum, utilizar Git y GitLab para el control de versiones.  </p> </div> </li><li> <div class="mx-12 pb-10 relative grid md:grid-cols-5 md:gap-10 md:space-x-4 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:content-[''] before:border-blue-300/50 dark:before:border-white/30 animate"> <div class="pb-5 relative md:col-span-2"> <div class="top-0 sticky"> <span class="-left-[42px] absolute rounded-full text-5xl text-blue-500 dark:text-yellow-300">&bull;</span> <h3 class="text-xl font-bold text-blue-500 dark:text-yellow-300"> Back-End Web Developer </h3> <h4 class="text-lg font-semibold text-gray-600 dark:text-white"> No-Country </h4> <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">ene. 2024 - feb. 2024</time> </div> </div> <p class="pb-4 relative flex flex-col gap-2 md:col-span-3 text-gray-600 dark:text-gray-300"> Diseño y desarrollo de un servidor para un sitio web de cuidado de mascotas. Colaboré en el Back-End con Node, JavaScript, Express, Mocha y SuperTest; implementación MongoDB para la base de datos. La comunicación constante con el equipo Front-End fue clave para lograr el MVP.  </p> </div> </li><li> <div class="mx-12 pb-10 relative grid md:grid-cols-5 md:gap-10 md:space-x-4 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:content-[''] before:border-blue-300/50 dark:before:border-white/30 animate"> <div class="pb-5 relative md:col-span-2"> <div class="top-0 sticky"> <span class="-left-[42px] absolute rounded-full text-5xl text-blue-500 dark:text-yellow-300">&bull;</span> <h3 class="text-xl font-bold text-blue-500 dark:text-yellow-300"> Back-End Web Developer </h3> <h4 class="text-lg font-semibold text-gray-600 dark:text-white"> Play-Bee </h4> <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">nov. 2023 - dic. 2023</time> </div> </div> <p class="pb-4 relative flex flex-col gap-2 md:col-span-3 text-gray-600 dark:text-gray-300"> Desarrollo de un servidor de microservicios para un sitio web que conecta jugadores en línea. Colaboré en el Back-End con Node, JavaScript, Express y Docker-compose; implementación MongoDB para la base de datos, FireBase para autenticación, y PayPal como pasarela de pagos.  </p> </div> </li><li> <div class="mx-12 pb-10 relative grid md:grid-cols-5 md:gap-10 md:space-x-4 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:content-[''] before:border-blue-300/50 dark:before:border-white/30 animate"> <div class="pb-5 relative md:col-span-2"> <div class="top-0 sticky"> <span class="-left-[42px] absolute rounded-full text-5xl text-blue-500 dark:text-yellow-300">&bull;</span> <h3 class="text-xl font-bold text-blue-500 dark:text-yellow-300"> Full Stack Web Developer </h3> <h4 class="text-lg font-semibold text-gray-600 dark:text-white"> Deep Skill Academy </h4> <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">jun. 2023 - jul. 2023</time> </div> </div> <p class="pb-4 relative flex flex-col gap-2 md:col-span-3 text-gray-600 dark:text-gray-300"> Actualización y desarrollo de un sitio web open source destinado a geólogos, especializado en el cálculo de riesgo sísmico. Enfocado principalmente en el Front-End, utilicé JavaScript, React y Redux Toolkit para crear formularios interactivos con mapas dinámicos y representé datos mediante gráficos significativos.  </p> </div> </li><li> <div class="mx-12 pb-10 relative grid md:grid-cols-5 md:gap-10 md:space-x-4 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:content-[''] before:border-blue-300/50 dark:before:border-white/30 animate"> <div class="pb-5 relative md:col-span-2"> <div class="top-0 sticky"> <span class="-left-[42px] absolute rounded-full text-5xl text-blue-500 dark:text-yellow-300">&bull;</span> <h3 class="text-xl font-bold text-blue-500 dark:text-yellow-300"> Representante técnico </h3> <h4 class="text-lg font-semibold text-gray-600 dark:text-white"> GNC ADVAN SA </h4> <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">ene. 2020 - feb. 2023</time> </div> </div> <p class="pb-4 relative flex flex-col gap-2 md:col-span-3 text-gray-600 dark:text-gray-300"> Como Representante Técnico, lideré la instalación, mantenimiento y reparación de maquinarias. Supervisé el Centro de Re-prueba de Cilindros GNC (CRPC) y la conversión de vehículos a GNC, destacando en la gestión logística y proporcionando atención al público. Esta experiencia me permitió desarrollar habilidades versátiles y demostrar una sólida capacidad para abordar diversas responsabilidades con éxito.  </p> </div> </li><li> <div class="mx-12 pb-10 relative grid md:grid-cols-5 md:gap-10 md:space-x-4 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:content-[''] before:border-blue-300/50 dark:before:border-white/30 animate"> <div class="pb-5 relative md:col-span-2"> <div class="top-0 sticky"> <span class="-left-[42px] absolute rounded-full text-5xl text-blue-500 dark:text-yellow-300">&bull;</span> <h3 class="text-xl font-bold text-blue-500 dark:text-yellow-300"> Trabajos técnicos </h3> <h4 class="text-lg font-semibold text-gray-600 dark:text-white"> Profesional independiente </h4> <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">oct. 2017 - dic. 2019</time> </div> </div> <p class="pb-4 relative flex flex-col gap-2 md:col-span-3 text-gray-600 dark:text-gray-300"> Matriculado en: Gas Domiciliario, Instalaciones Eléctricas y Aire Acondicionado. Trabajos diversos domiciliarios. Me especialicé en la instalación, mantenimiento y reparación de: artefactos a gas, sistemas eléctricos y equipos de aire acondicionado. Durante estas responsabilidades, perfeccioné: adaptabilidad, proactividad y habilidades de comunicación con clientes, asegurando una ejecución efectiva y satisfacción del cliente en cada proyecto.  </p> </div> </li> </ol>  </section> <section id="projects" data-section="projects" class="section pt-16 pb-0 w-full mx-auto container md:max-w-2xl lg:max-w-4xl">  <h2 class="mb-6 flex gap-x-3 items-center text-3xl font-semibold"> <svg class="size-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path d="M14 4l-4 16"></path></svg>
+Projects
+</h2> <div class="flex flex-col gap-y-16"> <article class="flex flex-col space-x-0 space-y-4 group md:flex-row md:space-x-8 md:space-y-0 animate"> <div class="w-full md:w-1/2"> <div class="duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-500 lg:hover:bg-gray-500/50"> <img alt="Project" class="object-cover object-top w-full h-full transition duration-500 md:scale-110 md:group-hover:scale-105" loading="lazy" src="/projects/recordingScreen.webp"> </div> </div> <div class="w-full md:w-1/2 md:max-w-lg flex flex-col"> <div class="flex flex-wrap gap-1"> <img alt="Git" loading="lazy" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white"><img alt="GitHub" loading="lazy" src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white"><img alt="HTML" loading="lazy" src="https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=HTML&logoColor=white"><img alt="CSS" loading="lazy" src="https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"><img alt="JavaScript" loading="lazy" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"><img alt="Astro" loading="lazy" src="https://img.shields.io/badge/-Astro-BC52EE?style=flat-square&logo=astro&logoColor=white"> </div> <h3 class="mt-4 text-2xl font-bold text-gray-800 dark:text-gray-100"> Screen Recording </h3> <p class="mt-1 text-gray-700 dark:text-gray-400">Sitio web para grabar pantalla con webcam y micrófono. Al habilitar la webcam, tiene la opción posicionar el video en cualquier parte de la pantalla. Finalmente al comenzar la grabación comparte &#39;Toda la pantalla&#39; para capturar también la webcam. Solo disponible para navegador de escritorio.</p> <div class="mt-4 flex items-end justify-start gap-x-4"> <a href="https://github.com/MaxiV95/rec" target="_blank" rel="noopener noreferrer" class="max-w-fit
+	px-4
+	py-1
+	transition
+	inline-flex
+	items-center
+	justify-center
+	gap-2
+	border
+	rounded-full
+	group
+	md:text-2xl
+	bg-gray-100
+	border-gray-400
+	hover:text-white
+	hover:bg-gray-500
+	hover:border-gray-900
+	focus-visible:ring-blue-500/50
+	dark:bg-gray-800
+	dark:border-gray-600
+	dark:hover:bg-gray-500
+	dark:focus-visible:ring-yellow-300/80
+	focus:outline-none
+	focus-visible:outline-none
+	focus-visible:ring
+	focus-visible:ring-offset-2">  <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
+Code
+ </a> <a href="https://maxiv95.github.io/rec" target="_blank" rel="noopener noreferrer" class="max-w-fit
+	px-4
+	py-1
+	transition
+	inline-flex
+	items-center
+	justify-center
+	gap-2
+	border
+	rounded-full
+	group
+	md:text-2xl
+	bg-gray-100
+	border-gray-400
+	hover:text-white
+	hover:bg-gray-500
+	hover:border-gray-900
+	focus-visible:ring-blue-500/50
+	dark:bg-gray-800
+	dark:border-gray-600
+	dark:hover:bg-gray-500
+	dark:focus-visible:ring-yellow-300/80
+	focus:outline-none
+	focus-visible:outline-none
+	focus-visible:ring
+	focus-visible:ring-offset-2">  <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+Preview
+ </a> </div> </div> </article><article class="flex flex-col space-x-0 space-y-4 group md:flex-row md:space-x-8 md:space-y-0 animate"> <div class="w-full md:w-1/2"> <div class="duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-500 lg:hover:bg-gray-500/50"> <img alt="Project" class="object-cover object-top w-full h-full transition duration-500 md:scale-110 md:group-hover:scale-105" loading="lazy" src="/projects/petPalGroupImg.webp"> </div> </div> <div class="w-full md:w-1/2 md:max-w-lg flex flex-col"> <div class="flex flex-wrap gap-1"> <img alt="Git" loading="lazy" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white"><img alt="GitHub" loading="lazy" src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white"><img alt="Node" loading="lazy" src="https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white"><img alt="JavaScript" loading="lazy" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"><img alt="React" loading="lazy" src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white"><img alt="Zustand" loading="lazy" src="https://img.shields.io/badge/Zustand-8d3e3e?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBjbGFzcz0ibGF5ZXIiPjxnIGNsYXNzPSJsYXllciI+PGcgY2xhc3M9ImxheWVyIiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMTQ3Ljk1IDkuNjdjNS40MSA0LjIgNy4xMiA5LjcgOC4wMSAxNi4yOS40MyA4LjI4LTIuMzcgMTYuMTgtNS4xIDIzLjkxLS40OCAyLjItLjQ4IDIuMiAyLjIyIDQuOS44NS45NSAxLjY5IDEuOSAyLjU3IDIuODh2MmwzIDFjMS4zOCAxLjg0IDEuMzggMS44NCAyLjY4IDQuMDYuNDQuNzMuODggMS40NyAxLjMzIDIuMjIuMzIuNTcuNjUgMS4xMy45OSAxLjcyLjU2LS4xIDEuMTMtLjE5IDEuNzItLjI5IDUuNC0uNzggOS4xNC0uNTcgMTQuMjggMS4yOXYyYy42MS4yMiAxLjIzLjQ1IDEuODcuNjggMi4xMyAxLjMyIDIuMTMgMS4zMiAzLjUgMy4zOCAxLjExIDUuMjMtLjQ5IDkuOTQtMi42MiAxNC43NS0yLjI0IDIuNzktNC42NyA0LjQxLTcuNzUgNi4xOWgtMmMuMDMgMS4wNi4wNiAyLjEzLjEgMy4yMi40NiAxOS45Mi00LjQxIDM2LjUxLTE2LjEgNTIuNzhsLTIgM2gtMmwtMSAzaC0ybC0xIDNoLTJsLTEgM2MtMTguNzcgMTguMzktNDMuODEgMjIuODktNjkgMjMtNC41OC0uMjUtOS4wNS0uNzMtMTMuMzgtMi4zMi0uNzQtLjI2LTEuNDctLjUzLTIuMjMtLjgtMS4xOS0uNDQtMS4xOS0uNDQtMi4zOS0uODhsLTIuODEtLjk1Yy01LjI0LTEuOC05Ljg2LTMuNTQtMTQuMTktNy4wNWwtMy0xLjVjLS43NC0uMS0yLjg3LTMuMS0zLjYzLTMuMjEtMTEuMjgtMi44My0xNi41NC0xNC4xNC0yMi4zMy0yMy40Ni0zLjAzLTUuMzItNS4wNy0xMS4wNi03LjA0LTE2LjgzLS4zOS0xLjA5LS4zOS0xLjA5LS43OC0yLjItNS41OC0xOC42NS0xLjE1LTM5LjA3IDcuNzgtNTUuOCAxLTEuMzUgMi4wMS0yLjY5IDMuMDYtNCAyLjY1LTMuODQgMS44NS03LjYyIDEuMTktMTItLjEzLS42Ny0uMjUtMS4zMy0uMzgtMi4wMi0xLjctOS4zLjIyLTE4Ljg4IDUuMzYtMjYuOTEgMS4yNy0xLjU3IDEuMjctMS41NyAzLjc3LTQuMDcuNTktLjYyIDEuMTktMS4yNCAxLjgxLTEuODggMy40LTEuNzUgNi40LTEuMzEgMTAuMTktMS4xMmwtMSAzYy0yIC42OC00IDEuMzQtNiAyLTUuNSAzLjIxLTguMjggOC0xMCAxNC0xLjI1IDkuNTYtLjkyIDE5LjEgMy4xMiAyNy45Ny44OCAyLjAzLjg4IDIuMDMuODggNS4wM2gtMnYtNWgtMmMtLjI1Ljg2LS41IDEuNzMtLjc1IDIuNjItMS4yNSAzLjM4LTEuMjUgMy4zOC0zLjE2IDYuMTEtMi4yNCAzLjUtMy41NiA2Ljk2LTQuNzggMTAuODktLjMyLjk4LS4zMi45OC0uNjQgMS45OS01LjkyIDE4LjQzLTIuOTIgMzcuMTQgNS4zMyA1NC4zOSA4LjcyIDE2LjM0IDI2LjIyIDI4LjgxIDQyLjkgMzUuMSAxOC44NyA0LjkgNDMuODMgNS4zMSA2MS4xNy00LjQ3IDIuNjYtMS42OCA1LjUtMi4zMSA3LjczLTQuNTMgMS43Ny0xIDUuMjQtMi43IDcuMDItMy42OCAxLjg0LTEuMTIgMy40OS0xLjk2IDQuOTgtMy41MmwzLjUtMy40IDMuMy0zLjFjMS40OS0xLjM0IDIuNTktMy44NCA0LjUzLTUuMzIgOC4wOC02LjgzIDguNjMtMTEuOTYgMTIuODctMjEuNThsNS4zLTIyLjktMS4zLTEwLjZjLTIuOTctLjUtMi45Ny0uNS02LTEtMi4zOC0xLjU3LTIuMzgtMS41Ny00LTMgLjAyIDEuMDYuMDQgMi4xMi4wNyAzLjIxLjAxIDEuMzkuMDMgMi43Ny4wNSA0LjE2LjAyLjcuMDMgMS40LjA1IDIuMTIuMDIgMS44NC0uMDcgMy42Ny0uMTcgNS41MWwtMiAyYy0uMTcgMy41OC0xLjE3IDQuMjgtMS42IDUuMS0uNDMuODItLjY0IDEuMjMtMS4yMyAyLjQ0cy0yLjQyIDEuOTYtMy45MiA0LjU4Yy01LjE5IDguMjItMTIuOTMgMTQuNjQtMjIuNDQgMTcuMTMtMTMuNDYgMi41NC0yNC4zLS4yMi0zNS44MS03LjI1bC0xLjUtMS41LTIuNTItMS43OGMtMi44LTIuNTctNC40LTMuNjctNy4yNy03LjE1bC0yLjgxLTMuOTctMS43LTQuMiAzLjMuNi41IDEuMmMxLjM1IDEuOTcgMi4wNCAyLjI5IDQuMTUgNS43MiAyLjExIDMuNDMgMTQuNzUgMTMuMzIgMjQuODUgMTYuMDggMTEuMjUgMS40OCAyMC41Mi0uNCAyOS43OC02Ljk5IDcuODEtNi40OSAxMi45OC0xNC43OCAxNC4yMi0yNS4wMS44LTEyLjA5LS42My0yMC4yNC03LjctMzAuMDYtMS4zLTEuOTQtNi40LTcuMDQtMTUuNi0xMC41NC05LjItMy41LTIwLjI3LTUuMzctMzAuNC0uMy0xMC4xMyA1LjA3LTE4LjAzIDE3LjM3LTE5LjUgMjMuNi0xLjQ3IDYuMjMtMi4xMyAxNi45Ny4xIDI3LjJsLTQuMDUtMi43Yy0xLjUyLTExLjI5LTMuNjUtMTYuMDEuMDEtMjYuNTQgMy42Ni0xMC41MyA4LjQyLTE1LjIgMTkuNTItMjMuNDNzMzkuODQtMy42OSA0OS4wMyA3LjI0YzkuMTkgMTAuOTMgMTIuNTkgMTcuODMgMTMuNTkgMjAuODMuMjgtLjk3LS43My01LjQ0LS40My02LjQ0IDEuMTMtMy4wNi40My0zLjg2IDIuNDMtNC44Ni4wMS43NC4wMiAxLjQ5LjA0IDIuMjYuMTggNi4xNS4xOCA2LjE1IDMuMDggMTEuMzYgMy41MiAxLjY4IDUuOTYgMi40NSA5Ljg4IDIuMzggMy4zMy0yLjY3IDYuNTktNS43NCA3LjM3LTEwLjA5LjEyLTQuMi0uMDUtNi4zOC0yLjMxLTEwLjA0LTMuNzUtMi4yOS01LjY2LTIuMTEtOS44OC0xLjQ2LTIuMjYuNjEtNC4xNCAxLjQ3LTYuMTggMi41OS0uMjMtLjU3LS40NS0xLjE1LS42OC0xLjczLTcuNDktMTcuMDgtMjMuNTMtMjguMzYtNDAuMzItMzUuMjctNS4yNy0xLjkxLTEwLjYyLTMuNDktMTYtNXYtMWM1LjE5LS4yMiA5LjEyLjQxIDE0IDIgLjk5LTEuNDkgMTIuMDktMTQuMTkgMTguNi0xNC4yIDYuNTEtLjAxIDMuNDkgMS4xOC0uMiAxLjgtMy42OS42Mi0xMy40MyA3Ljg0LTE0LjczIDExLjE3LTEuMyAzLjMzIDQuOTIgNC4wNSA2Ljg5IDUuMjkuNjUuNDEgMTIuMiA3LjgxIDEyLjg3IDguMjIgMS4zNi44NiAzLjM1LTI1LjEzLS44NC0yNC42M2wuMzEtMS4xNWM2LjQtLjE2IDIuMyAyNS43OCAyLjQxIDI2LjQzLjExLjY1LjQ1IDEuMzcuNjkgMi4wN2wzIDFjMS41OS02LjYxIDIuMjEtMTMuMDQgMi4yNS0xOS44MiAwLS43MS4wMS0xLjQzLjAyLTIuMTctLjAyLTQuMzctLjU1LTcuOTktMi4yNy0xMi4wMS0zLjM0LTIuOTQtNi40Ny0zLjU1LTEwLjktMy4zNC03LjY4IDEuMjQtMTMuMzYgNi40NS0xOC4xIDEyLjM0LTEuMzIgMi4zMy0yLjE1IDQuNDQtMyA3bC0yLTFjLjUtNC4zNiAxLjM4LTcuNDUgNC0xMWgydi0yYzIuMDgtMS45MSAyLjA4LTEuOTEgNC44MS00LjA3Ljg5LS43MSAxLjc4LTEuNDIgMi43LTIuMTYgNS42LTQgMTQuNS00LjU0IDIwLjc5LTEuNzV6Ii8+PHBhdGggZD0iTTEzNy4zNSA5MS4yMWMyLjA1IDIuMDUgMi4wNSAyLjA1IDIuMTEgNS43Ny0uODEgNS40My0yLjEgNy42My02LjI1IDExLjA3LTIuMjguNzQtNC4zNCAyLjMxLTUuMTQgMi4zNy0uOC4wNi0xLjA5LjE2LTEuOC4yMy0uNzEuMDYtMS4wMS4yMS0xLjQyLjM3LS40MS4xNy0xLjI5LjQ4LTEuOTUuNTgtLjY2LjEtMS4xOC4xMS0xLjkuMzktLjcyLjI5LTEuMjcuMzMtMS45Ni4yOS0uNy0uMDQtMS40OC4zNC0xLjk0LjQ2LS40Ni4xMi0xLjI0LjA3LTEuOC4xMy0uNTcuMDYtLjcyIDAtMS4zOC4xNS0uNjUuMTUtMi4xLjM4LTQuMTkuNzItLjM0IDMuMDQtLjY4IDYuMDgtMS4wMiA5LjIyLTIuMzQtMy41Mi0yLjIzLTUuMTEtMi4wNS05LjIyLTQuMDUuNTEtNS43NSAxLjI3LTcuODEuODQtMi4wNi0uNDMtMi43OS0xLjM4LTQuMjctMS45OC0xLjQ4LS42LTIuOTMtMi4wOS0zLjAzLTMuOTEtLjEtMS44My4xNy00LjQxLS4xNC01LjEzIDEuMzYtMi45MyAzLjE0LTIuNDIgNi4wNi0zLjg4IDEuODctLjA5IDYuOTcuNjYgOC44Ny41NiAxMS4wMi0xLjA4IDIwLjI0LTkuOCAzMS4wMS05LjAydi0uMDF6TTEyMC44NCA3My45Yy41Mi40OSAzLjI2IDMuNDEtLjI0IDYuNi0zLjUgMy4xOS03LjY3IDQuNzgtNS43NCAyLjMxIDEuOTMtMi40NyA3Ljg0LTUuMzEgNi4xNC02LjcxLTEuNy0xLjQtNS44LTQuMi0xMC4xLTEuNmwtNS44IDIuOGMtMy4yNSAyLjY0LTUuNTggNy44MyA0LjUgNi43cy4zMyAxLjUyLS45NSAxLjU5Yy0zLjAzLjAxLTQuMDctLjA4LTYuNzUtMS42OWwtMS41LTEuNWMuMjYtMy40MSAxLjI2LTQuMjUgMy44MS02LjY5IDQuOTUtMy41OCAxMS4wNS01LjI0IDE2LjYzLTEuODF6TTM4LjQgMjAuNGM3LjYgMi4wNCAxMS4xOSA1LjkgMTYgMTJsMy42OS0uOTRjMy4wOS0uNzcgNi4xOC0xLjQ3IDkuMzEtMi4wNi0uOTkgMS40OCA5LjU4LTEuNjYgMTIuNTctMS44NiAyLjk5LS4xOSAxMS44OS0xLjA0IDE5LjU2LS4zNiA3LjY3LjY5IDguOTIgMi41OCAxMi4xNSAyLjY0LTIuMTggMi4xOC0yMS0xLjE1LTIzLjkxLS41LS43Ni4xNy0xMC41My43OC0xMC44OCAxLjEtLjM1LjMyLTcuMTYgMS40OS03Ljk3IDEuNjctLjgxLjE4LTUuMzIgMS4wNy02LjE0IDEuMjZsLTUuMzggNC4wM3YyaDNsLTIgNGMtMS41LTEuMzctMS41LTEuMzctMy0zdi0yaC0yYy0xLjU5LTEuNjEtMS41OS0xLjYxLTMuMzctMy43NS0uNjMtLjczLTEuMjUtMS40Ni0xLjg5LTIuMjEtLjU4LS42Ny0xLjE1LTEuMzUtMS43NC0yLjA0LTIuNTItMi43NC00LjU3LTQuNTMtOC02di00IC4wMnpNNTYuNCA5OC40YzMuMzkgMS4yMiA2LjE4IDIuNzEgOC4xNyA1Ljg0IDEuOTUgNS4wOCAxLjQxIDEwLjU3LS40MiAxNS42LTIuNDYgMy42LTQuMzUgNS4yOC04LjcgNi4xNC0xLjA0LjA4LTIuMDkuMTUtMy4xOC4yMy0xLjA1LjA5LTIuMS4xOC0zLjE5LjI3LTIuNjgtLjA4LTIuNjgtLjA4LTQuNjgtMi4wOC43Mi0uMDMgMS40NS0uMDUgMi4yLS4wOCA2LjE0LS4zNiAxMC4xLS44NCAxNC44LTQuOTIgMS43Mi0zLjQ1IDEuMzctNy4yMiAxLTExLTEuNjItMy42My0yLjY2LTQuNzctNi03LTMuMzktLjU1LTYuNjEtLjU0LTEwIDAtMy4zNSAyLjUzLTQuNjggNC4wNC02IDgtLjA3IDIuMDYtLjA4IDQuMTMtLjA2IDYuMTkuMDEgMS4wOC4wMiAyLjE3LjAyIDMuMjkuMDIuODMuMDMgMS42Ni4wNCAyLjUybC0zLTJjLS40LTIuNjQtLjQtMi42NC0uMzgtNS44MSAwLTEuMDQtLjAxLTIuMDgtLjAyLTMuMTUuNjItNC42OSAyLjUtNy4yMyA1Ljk2LTEwLjM1IDQuNjItMi4yNyA4LjM4LTIuNDkgMTMuNDQtMS42OXpNNDIuMjggMzUuMDJjNC40MyAzLjY4IDExLjM4IDE1IDEwLjYyIDE2Ljc1TDM0LjUzIDcxLjE0bC0xLjM4LTIuMzhjNS44My00LjEzIDEzLjc1LTE0LjQyIDE2LjM3LTE2Ljc1IDIuNjItMi4zMy05LjI4LTE0LjA4LTEyLjU2LTE0Ljk0LTMuMjgtLjg1LTYuODMgMi44Ny03LjUxIDMuODUtLjY4Ljk3LTEuMyAyLjQyLTEuOCAxMS41OXM2Ljg3IDE5LjA4IDUuNSAxOS4zN2MtMS4zNy4yOS0uNTEgMS44OS0yLjc1LjE5LTIuMjUtMS43MS01LjQ1LTE3LjY1LTUuMjQtMjAuNDQuMjEtMi43OS4yNy0xMS4yNiAyLjEyLTEzLjI1IDEuODYtMS45OSAxMC41Ny03LjA2IDE1LTMuMzd6TTU4LjQgNzcuNGw0IDJ2N2MtMi4zNy42My0yLjM3LjYzLTUgMS0yLTItMi0yLTIuMzEtNSAuMS0uOTkuMi0xLjk4LjMxLTNsMy0yek0xNDMuNCA1Ni40YzIuMDYuNDQgMi4wNi40NCA0IDEgLjYzIDIuMzEuNjMgMi4zMSAxIDUtLjk5IDEuNDktLjk5IDEuNDktMiAzbC00LTJjLS4wNC0yLS4wNC00IDAtNmwxLTF6Ii8+PHBhdGggZD0iTTEwMy41OCAxMTMuMjFjMi43MS0uNjYgMS4zMSAxMy42MyAzLjI0IDE3IDIuOTcuMjggNS01LjYxIDUuOTgtOS4yLjk4LTMuNTkuNTMtNS4wOSAyLjgtOC42NCAyLjI3LTMuNTUtMS4xOCAyMC40NC02LjU2IDIwLjI1LTUuMzgtLjE5LTYuMDQtMy42MS02LjI2LTcuMzMuMDYtLjgzLS4wMi03LjgyLjc5LTEyLjA4aC4wMXoiIHN0cm9rZT0iI2ZmZiIvPjxwYXRoIGQ9Ik0xMTMuOSA4My43aDFsMSAxNGMtLjk5LjQ5LS45OS40OS0yIDEtLjItMS45NC0uMzgtMy44Ny0uNTYtNS44MS0uMTEtMS4wOC0uMjEtMi4xNi0uMzItMy4yNy0uMTItMi45Mi0uMTItMi45Mi44OC01Ljkyek0xMDguNCA0MC40aDJjMS4xNiAzLjQ3IDEuMDcgNi4zNiAxIDEwLTItMS0yLTEtMy4xOS0zLjMxLS44NS0yLjgxLS44MS0zLjk5LjE5LTYuNjl6TTczLjQgNTkuNGMyLjg3IDEuMjkgNC45OCAyLjU3IDcgNXYyYy0xLjk0LS4zMS0xLjk0LS4zMS00LTFsLTEtM2gtMnYtM3pNOTUuNCA0Ni40aDJjMS41NiAyLjgxIDEuNTYgMi44MSAzIDZsLTEgM2MtNC01LjYyLTQtNS42Mi00LTl6TTEwMS40IDE0OS40aDJjLTEuNjIgNi43NS0xLjYyIDYuNzUtNSA5IC41Ni0zLjM0IDEuMzUtNi4wMyAzLTl6TTg2LjQgMTQ4LjRoMmMtMS4wOSAzLjc4LTEuOTEgNi40Ny01IDkgLjUtMy43My44Ny01LjgxIDMtOXpNODIuNCA1MC40bDQgMXYzaDJsLTEgM2ExMzguNjcgMTM4LjY3IDAgMCAxLTUtNXYtMnpNMTI1LjQgMTUxLjRoMmMtLjI4IDEuMzEtLjU4IDIuNjMtLjg3IDMuOTQtLjE3LjczLS4zMyAxLjQ2LS41IDIuMjEtLjYzIDEuODUtLjYzIDEuODUtMi42MyAyLjg1Ljg3LTcuODcuODctNy44NyAyLTl6TTY0LjQgMTM1LjRoMmMtLjgxIDIuOTQtLjgxIDIuOTQtMiA2bC0zIDFjMS44Ny01Ljg3IDEuODctNS44NyAzLTd6TTgwLjQgMTMyLjRoMmMtMS44NyA1Ljc1LTEuODcgNS43NS0zIDhoLTJjMS44Ny02Ljg3IDEuODctNi44NyAzLTh6TTgyLjQgMzcuNGMxLjk0LjY5IDEuOTQuNjkgNCAyIC43NSAyLjYzLjc1IDIuNjMgMSA1YTEzOC42NyAxMzguNjcgMCAwIDEtNS01di0yek01OS40IDY0LjRjMi40OSAxLjIgNC42OCAyLjQ1IDcgNHYyYy0zIDAtMyAwLTUuMTktMS44Ny0xLjgxLTIuMTMtMS44MS0yLjEzLTEuODEtNC4xM3pNNjguNCA0MS40YzMgMSAzIDEgNSA0bC0xIDNjLTItMS44MS0yLTEuODEtNC00di0zeiIvPjwvZz48L2c+PC9nPjwvc3ZnPg=="><img alt="Express" loading="lazy" src="https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white"><img alt="MongoDB" loading="lazy" src="https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"><img alt="Mocha" loading="lazy" src="https://img.shields.io/badge/-Mocha-8D6748?style=flat-square&logo=mocha&logoColor=white"><img alt="Chai" loading="lazy" src="https://img.shields.io/badge/-Chai-A30701?style=flat-square&logo=chai&logoColor=white"> </div> <h3 class="mt-4 text-2xl font-bold text-gray-800 dark:text-gray-100"> PetPalGroup </h3> <p class="mt-1 text-gray-700 dark:text-gray-400">Aplicación web diseñada para proporcionar a los dueños de mascotas una herramienta para el cuidado, seguimiento y localización de sus compañeros peludos. Los códigos QR pueden ser una herramienta eficaz para ayudar a encontrar a las mascotas perdidas. Creado junto a un grupo de programadores en las practicas de No-Country.</p> <div class="mt-4 flex items-end justify-start gap-x-4"> <a href="https://github.com/No-Country/c16-17-t-node-react" target="_blank" rel="noopener noreferrer" class="max-w-fit
+	px-4
+	py-1
+	transition
+	inline-flex
+	items-center
+	justify-center
+	gap-2
+	border
+	rounded-full
+	group
+	md:text-2xl
+	bg-gray-100
+	border-gray-400
+	hover:text-white
+	hover:bg-gray-500
+	hover:border-gray-900
+	focus-visible:ring-blue-500/50
+	dark:bg-gray-800
+	dark:border-gray-600
+	dark:hover:bg-gray-500
+	dark:focus-visible:ring-yellow-300/80
+	focus:outline-none
+	focus-visible:outline-none
+	focus-visible:ring
+	focus-visible:ring-offset-2">  <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
+Code
+ </a> <a href="https://petpalfront.netlify.app" target="_blank" rel="noopener noreferrer" class="max-w-fit
+	px-4
+	py-1
+	transition
+	inline-flex
+	items-center
+	justify-center
+	gap-2
+	border
+	rounded-full
+	group
+	md:text-2xl
+	bg-gray-100
+	border-gray-400
+	hover:text-white
+	hover:bg-gray-500
+	hover:border-gray-900
+	focus-visible:ring-blue-500/50
+	dark:bg-gray-800
+	dark:border-gray-600
+	dark:hover:bg-gray-500
+	dark:focus-visible:ring-yellow-300/80
+	focus:outline-none
+	focus-visible:outline-none
+	focus-visible:ring
+	focus-visible:ring-offset-2">  <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+Preview
+ </a> </div> </div> </article><article class="flex flex-col space-x-0 space-y-4 group md:flex-row md:space-x-8 md:space-y-0 animate"> <div class="w-full md:w-1/2"> <div class="duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-500 lg:hover:bg-gray-500/50"> <img alt="Project" class="object-cover object-top w-full h-full transition duration-500 md:scale-110 md:group-hover:scale-105" loading="lazy" src="/projects/foodImg.webp"> </div> </div> <div class="w-full md:w-1/2 md:max-w-lg flex flex-col"> <div class="flex flex-wrap gap-1"> <img alt="Git" loading="lazy" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white"><img alt="GitHub" loading="lazy" src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white"><img alt="Node" loading="lazy" src="https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white"><img alt="JavaScript" loading="lazy" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"><img alt="React" loading="lazy" src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white"><img alt="Redux" loading="lazy" src="https://img.shields.io/badge/-Redux-764ABC?style=flat-square&logo=redux&logoColor=white"><img alt="Express" loading="lazy" src="https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white"><img alt="PostgreSQL" loading="lazy" src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"><img alt="Mocha" loading="lazy" src="https://img.shields.io/badge/-Mocha-8D6748?style=flat-square&logo=mocha&logoColor=white"><img alt="Chai" loading="lazy" src="https://img.shields.io/badge/-Chai-A30701?style=flat-square&logo=chai&logoColor=white"> </div> <h3 class="mt-4 text-2xl font-bold text-gray-800 dark:text-gray-100"> Recipes Finder </h3> <p class="mt-1 text-gray-700 dark:text-gray-400">Aplicación para búsqueda de recetas. Este sitio web lo cree al finalizar mis estudios en HENRY. Cuenta con servidor y guardado de recetas personales en PostgreSQL.</p> <div class="mt-4 flex items-end justify-start gap-x-4"> <a href="https://github.com/MaxiV95/PI-Food" target="_blank" rel="noopener noreferrer" class="max-w-fit
+	px-4
+	py-1
+	transition
+	inline-flex
+	items-center
+	justify-center
+	gap-2
+	border
+	rounded-full
+	group
+	md:text-2xl
+	bg-gray-100
+	border-gray-400
+	hover:text-white
+	hover:bg-gray-500
+	hover:border-gray-900
+	focus-visible:ring-blue-500/50
+	dark:bg-gray-800
+	dark:border-gray-600
+	dark:hover:bg-gray-500
+	dark:focus-visible:ring-yellow-300/80
+	focus:outline-none
+	focus-visible:outline-none
+	focus-visible:ring
+	focus-visible:ring-offset-2">  <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
+Code
+ </a>  </div> </div> </article><article class="flex flex-col space-x-0 space-y-4 group md:flex-row md:space-x-8 md:space-y-0 animate"> <div class="w-full md:w-1/2"> <div class="duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-500 lg:hover:bg-gray-500/50"> <img alt="Project" class="object-cover object-top w-full h-full transition duration-500 md:scale-110 md:group-hover:scale-105" loading="lazy" src="/projects/blogImg.webp"> </div> </div> <div class="w-full md:w-1/2 md:max-w-lg flex flex-col"> <div class="flex flex-wrap gap-1"> <img alt="Git" loading="lazy" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white"><img alt="GitHub" loading="lazy" src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white"><img alt="Node" loading="lazy" src="https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white"><img alt="TypeScript" loading="lazy" src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"><img alt="Nest" loading="lazy" src="https://img.shields.io/badge/-Nest.Js-E0234E?style=flat-square&logo=nestjs&logoColor=white"><img alt="MongoDB" loading="lazy" src="https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"> </div> <h3 class="mt-4 text-2xl font-bold text-gray-800 dark:text-gray-100"> Api Blog </h3> <p class="mt-1 text-gray-700 dark:text-gray-400">API con funcionalidades de CRUD completo para un blog. Este proyecto lo cree al finalizar mis estudios en CódigoFacilito. Cuenta con registro y autenticación de usuarios, gestión de administradores. MongoDB para base de datos. Incluye chat en vivo implementado con Sockets y un bot de eventos que utiliza Webhooks de Github para notificar automáticamente cambios relevantes en un canal de Discord.</p> <div class="mt-4 flex items-end justify-start gap-x-4"> <a href="https://github.com/MaxiV95/tpf-blog" target="_blank" rel="noopener noreferrer" class="max-w-fit
+	px-4
+	py-1
+	transition
+	inline-flex
+	items-center
+	justify-center
+	gap-2
+	border
+	rounded-full
+	group
+	md:text-2xl
+	bg-gray-100
+	border-gray-400
+	hover:text-white
+	hover:bg-gray-500
+	hover:border-gray-900
+	focus-visible:ring-blue-500/50
+	dark:bg-gray-800
+	dark:border-gray-600
+	dark:hover:bg-gray-500
+	dark:focus-visible:ring-yellow-300/80
+	focus:outline-none
+	focus-visible:outline-none
+	focus-visible:ring
+	focus-visible:ring-offset-2">  <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
+Code
+ </a>  </div> </div> </article> </div>  </section> <section id="about" data-section="about" class="section pt-16 pb-0 animate w-full mx-auto container md:max-w-2xl lg:max-w-4xl">  <h2 class="mb-6 flex gap-x-3 items-center text-3xl font-semibold"> <svg class="size-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path><path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path><path d="M15 19l2 2l4 -4"></path></svg>
+About me
+</h2> <article class="mt-4 flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"> <div class="order-2 md:order-1 [&>p]:mb-4 [&>p>strong]:font-normal [&>p>strong]:font-mono [&>p>strong]:text-blue-800 dark:[&>p>strong]:text-yellow-200/80"> <p>
+Desde mis días de estudios secundarios, me he sentido atraído hacia el
+			mundo técnico, especialmente luego de obtener mi título como
+<strong>Técnico Electrónico</strong>. Mi curiosidad por entender cómo
+			funcionan las cosas y resolver enigmas ha sido una constante en mi vida,
+			sirviendo como un motor que impulsa mi crecimiento personal y profesional.
+</p> <p>
+Fuera del mundo de la tecnología, encuentro equilibrio y placer en otras
+			actividades. La <strong>natación</strong> ha sido una pasión arraigada en mí
+			desde que tengo memoria, llevándome a alcanzar logros notables, como subir
+			al podio en competencias de aguas abiertas.
+</p> <p>
+Además, he descubierto un apasionante interés por el
+<strong>baile</strong>, particularmente en estilos como la
+<strong><em class="italic">salsa</em></strong> y la
+<strong><em class="italic">bachata</em></strong>, que he estado
+			practicando con entusiasmo desde hace más de un año. Este nuevo pasatiempo
+			no solo me proporciona una forma de expresión creativa, sino también la
+			oportunidad de conectarme con otros de una manera única y emocionante.
+</p> <p>
+Mi objetivo es seguir creciendo como desarrollador de software,
+			enfocándome en crear aplicaciones estéticamente atractivas y técnicamente
+			sólidas. Aspiro a desarrollar <strong>soluciones prácticas</strong> que resuelvan
+			problemas reales y satisfagan las necesidades de los usuarios. Estoy comprometido
+			a contribuir de manera significativa al mundo de la tecnología, aportando mi
+			creatividad y habilidades técnicas en cada proyecto en el que participe.
+</p> </div> </article>  </section> </main>  <footer class="flex justify-center m-8"> <span class="text-sm text-zinc-800/90 dark:text-zinc-200/90">
+© 2024 <a href="https://github.com/MaxiV95" target="_blank" rel="noopener noreferrer" class="hover:underline">MaxiV95.</a>
+Based on
+<a href="https://animated-churros-60739d.netlify.app/" target="_blank" rel="noopener noreferrer" class="hover:underline">midudev</a> </span> </footer>   </body> </html>
