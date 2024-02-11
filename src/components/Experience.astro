@@ -1,0 +1,47 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+	{
+		title: "BackEnd Web Developer",
+		date: "nov. 2023 - dic. 2023",
+		company: "Play-Bee",
+		description:
+			"Durante una contratación temporal, lideré el diseño y desarrollo de un servidor de microservicios para un sitio web que conecta jugadores en línea. Colaboré en el Backend con Node, JavaScript, Express y Docker-compose; implementé MongoDB para la base de datos, FireBase para autenticación, y PayPal como pasarela de pagos.",
+		link: null,
+	},
+	{
+		title: "Full Stack Web Developer",
+		date: "jun. 2023 - jul. 2023",
+		company: "Deep Skill Academy",
+		description:
+			"Al completar mis estudios como Full Stack Web Developer, fui seleccionado para una pasantía donde desempeñé un papel crucial en el diseño y desarrollo de un sitio web open source destinado a geólogos, especializado en el cálculo de riesgo sísmico. Enfocado principalmente en el Frontend, utilicé JavaScript, React y Redux Toolkit para crear formularios interactivos con mapas dinámicos y representé datos mediante gráficos significativos.",
+		link: null,
+	},
+  {
+		title: "Representante técnico",
+		date: "ene. 2020 - feb. 2023",
+		company: "GNC ADVAN SA",
+		description:
+			"Como Representante Técnico, desempeñé un papel multifacético, liderando la instalación, mantenimiento y reparación de maquinarias. Supervisé el Centro de Reprueba de Cilindros GNC (CRPC) y la conversión de vehículos a GNC, destacando en la gestión logística y proporcionando atención al público. Esta experiencia me permitió desarrollar habilidades versátiles y demostrar una sólida capacidad para abordar diversas responsabilidades con éxito.",
+		link: null,
+	},
+  {
+		title: "Trabajos técnicos",
+		date: "oct. 2017 - dic. 2019",
+		company: "Profesional independiente",
+		description:
+			"En mi rol como Matriculado en: Gas Domiciliario, Instalaciones Eléctricas y Aire Acondicionado, llevé a cabo diversos trabajos técnicos tanto en la calle como en domicilios. Me especialicé en la instalación, mantenimiento y reparación de artefactos a gas, sistemas eléctricos y equipos de aire acondicionado. Durante estas responsabilidades, perfeccioné mi adaptabilidad, proactividad y habilidades de comunicación con clientes, asegurando una ejecución efectiva y satisfacción del cliente en cada proyecto.",
+		link: null,
+	},
+];
+---
+
+<ol class="relative mt-16">
+	{
+		EXPERIENCE.map((experience) => (
+			<li class="">
+				<ExperienceItem {...experience} />
+			</li>
+		))
+	}
+</ol>
