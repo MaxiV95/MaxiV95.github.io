@@ -1,12 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <Layout
 	title="Maximiliano Van Megroot - Portfolio"
 	description="Contrata a Maximiliano para crear tu aplicación web. Desarrollador Web Full Stack. Especializado en crear aplicaciones únicas y con experiencia en JavaScript."
 >
-	<main></main>
+	<main class="px-4">
+		<SectionContainer class="py-16 md:py-36">
+			<Hero />
+		</SectionContainer>
+	</main>
 </Layout>
-
-<style></style>

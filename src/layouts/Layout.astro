@@ -1,5 +1,5 @@
 ---
-import "@fontsource-variable/onest"
+import "@fontsource-variable/onest";
 import Header from "../components/Header.astro";
 import { ViewTransitions } from "astro:transitions";
 
@@ -25,7 +25,7 @@ const { description, title } = Astro.props;
 	<body class="relative text-black dark:text-white">
 		<div
 			class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
-      bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(5,5,255,0.4),rgba(0,0,255,0.1))]
+      bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(255,255,0,0.1),rgba(0,0,255,0.1))]
       dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,0,255,0.4),rgba(0,0,255,0.09))]"
 		>
 		</div>
@@ -46,9 +46,6 @@ const { description, title } = Astro.props;
 				flex-direction: column;
 				min-height: 100vh;
 				overscroll-behavior: none;
-			}
-			strong {
-				color: rgba(145, 255, 0, 0.9);
 			}
 			#header-nav {
 				animation: blur linear both 0.5s;
@@ -74,9 +71,6 @@ const { description, title } = Astro.props;
 				}
 			}
 			@media (prefers-color-scheme: dark) {
-				strong {
-					color: var( rgba(255, 0, 0, 0.9));
-				}
 				body {
 					color: rgba(255, 255, 255, 0.9);
 				}
