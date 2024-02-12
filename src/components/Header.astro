@@ -3,24 +3,24 @@ import ThemeToggle from "./ThemeToggle.astro";
 
 const navItems = [
 	{
-		title: "Experiencia",
-		label: "experiencia",
-		url: "/#experiencia",
+		title: "Home",
+		label: "home",
+		url: "/#home",
 	},
 	{
-		title: "Proyectos",
-		label: "proyectos",
-		url: "/#proyectos",
+		title: "Experience",
+		label: "experience",
+		url: "/#experience",
 	},
 	{
-		title: "Sobre mí",
-		label: "sobre-mi",
-		url: "/#sobre-mi",
+		title: "Projects",
+		label: "projects",
+		url: "/#projects",
 	},
 	{
-		title: "Contacto",
-		label: "contacto",
-		url: "/#contacto",
+		title: "About",
+		label: "about",
+		url: "/#about",
 	},
 ];
 ---
@@ -29,7 +29,7 @@ const navItems = [
 	class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
 >
 	<nav
-		class="flex gap-1 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
+		class="flex px-2 gap-1 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
 	>
 		{
 			navItems.map((link) => (
