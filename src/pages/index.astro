@@ -2,8 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Hero from "../components/Hero.astro";
-import Briefcase from "../icons/Briefcase.astro"
-import Experience from "../components/Experience.astro"
+import Experience from "../components/Experience.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Briefcase from "../icons/Briefcase.astro";
+import ProfileCheck from "../icons/ProfileCheck.astro";
 ---
 
 <Layout
@@ -11,20 +13,28 @@ import Experience from "../components/Experience.astro"
 	description="Contrata a Maximiliano para crear tu aplicación web. Desarrollador Web Full Stack. Especializado en crear aplicaciones únicas y con experiencia en JavaScript."
 >
 	<main class="px-4">
-		<SectionContainer class="py-16 md:py-36">
+		<SectionContainer id="home" class="py-20">
 			<Hero />
 		</SectionContainer>
 
-		<div class="space-y-24">
-			<SectionContainer id="experiencia">
-				<h2
-					class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-				>
-					<Briefcase class="size-8" />
-					Experiencia laboral
-				</h2>
-				<Experience />
-			</SectionContainer>
-		</div>
+		<SectionContainer id="experience" class="py-16">
+			<h2
+				class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+			>
+				<Briefcase class="size-8" />
+				Experience
+			</h2>
+			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="about" class="py-16">
+			<h2
+				class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+			>
+				<ProfileCheck class="size-8" />
+				About
+			</h2>
+			<AboutMe />
+		</SectionContainer>
 	</main>
 </Layout>
