@@ -4,7 +4,9 @@ import SectionContainer from "../components/SectionContainer.astro";
 import Hero from "../components/Hero.astro";
 import Experience from "../components/Experience.astro";
 import AboutMe from "../components/AboutMe.astro";
+import Projects from "../components/Projects.astro"
 import Briefcase from "../icons/Briefcase.astro";
+import CodeIcon from "../icons/Code.astro";
 import ProfileCheck from "../icons/ProfileCheck.astro";
 ---
 
@@ -13,11 +15,11 @@ import ProfileCheck from "../icons/ProfileCheck.astro";
 	description="Contrata a Maximiliano para crear tu aplicación web. Desarrollador Web Full Stack. Especializado en crear aplicaciones únicas y con experiencia en JavaScript."
 >
 	<main class="px-4">
-		<SectionContainer id="home" class="py-20">
+		<SectionContainer id="home" class=" pt-[10rem] pb-20">
 			<Hero />
 		</SectionContainer>
 
-		<SectionContainer id="experience" class="py-16">
+		<SectionContainer id="experience" class="pt-16 pb-0">
 			<h2
 				class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
 			>
@@ -27,12 +29,22 @@ import ProfileCheck from "../icons/ProfileCheck.astro";
 			<Experience />
 		</SectionContainer>
 
-		<SectionContainer id="about" class="py-16">
+		<SectionContainer id="projects" class="pt-16 pb-0">
 			<h2
-				class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+				class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+			>
+				<CodeIcon class="size-8" />
+				Projects
+			</h2>
+			<Projects />
+		</SectionContainer>
+
+		<SectionContainer id="about" class="pt-16 pb-0">
+			<h2
+				class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
 			>
 				<ProfileCheck class="size-8" />
-				About
+				About me
 			</h2>
 			<AboutMe />
 		</SectionContainer>
