@@ -26,15 +26,15 @@ const navItems = [
 ---
 
 <header
-	class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
+	class="mx-auto mt-2 w-full top-0 fixed z-10 flex items-center justify-center"
 >
 	<nav
-		class="flex px-2 gap-1 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
+		class="px-2 flex gap-1 justify-center items-center font-medium rounded-full text-sm md:text-lg text-gray-600 dark:text-gray-200"
 	>
 		{
 			navItems.map((link) => (
 				<a
-					class="relative block px-2 py-2 transition hover:text-blue-600 dark:hover:text-yellow-300"
+					class="p-2 hover:text-blue-500 dark:hover:text-yellow-400"
 					aria-label={link.label}
 					href={link.url}
 				>
@@ -92,14 +92,13 @@ const navItems = [
 
 <style>
 	nav {
-		animation: nav-shadown 1s linear both;
+		animation: nav-shadown both;
 		animation-timeline: scroll();
-		animation-range: 0 100px;
+		animation-range: 0 500px;
 	}
-
 	@keyframes nav-shadown {
 		to {
-			@apply shadow-lg ring-1 backdrop-blur bg-gray-300/60 dark:bg-gray-800/60 ring-white/10;
+			@apply shadow-lg ring-1 backdrop-blur bg-gray-500/40;
 		}
 	}
 </style>

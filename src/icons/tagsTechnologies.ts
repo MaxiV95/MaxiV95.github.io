@@ -1,4 +1,9 @@
-export const TAGS = {
+export interface Tag {
+	name: string;
+	url: string;
+}
+
+export const TAGS: { [key: string]: Tag } = {
 	Git: {
 		name: "Git",
 		url: "https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white",

@@ -1,7 +1,7 @@
 ---
 import "@fontsource-variable/onest";
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro"
+import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 
 interface Props {
@@ -10,20 +10,29 @@ interface Props {
 }
 
 const { description, title } = Astro.props;
+const baseUrl = "https://maxiv95.github.io/";
+const fbAppId = "1798923197";
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
+		<title>{title}</title>
+		<meta name="title" property="og:title" content={title} />
+		<meta name="description" property="og:description" content={description} />
+		<meta name="image" property="og:image"	content="https://avatars.githubusercontent.com/u/118027004"	/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={`${baseUrl}`} />
+		<meta property="fb:app_id" content={`${fbAppId}`} />
+		<meta property="fb:admins" content={`${fbAppId}`} />
+		<meta name="author" content="Maximiliano Van Megroot" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
 		<ViewTransitions />
 	</head>
-	<body class="relative text-black dark:text-white">
+	<body class="relative">
 		<div
 			class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
       bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(255,255,0,0.1),rgba(0,0,255,0.1))]
@@ -35,68 +44,29 @@ const { description, title } = Astro.props;
 		<Footer />
 		<style is:global>
 			:root {
-				color-scheme: light dark;
+				color-scheme: dark light;
 			}
 			html {
 				font-family: "Onest Variable", system-ui, sans-serif;
 				scroll-behavior: smooth;
 			}
 			body {
-				color: rgba(17, 17, 17, 0.9);
 				display: flex;
 				flex-direction: column;
 				min-height: 100vh;
-				overscroll-behavior: none;
 			}
-			#header-nav {
-				animation: blur linear both 0.5s;
-				animation-timeline: scroll();
-				animation-range: 0 500px;
+			h1,
+			h2,
+			h3,
+			h4 {
+				text-wrap: balance;
 			}
-			@keyframes blur {
-				to {
-					backdrop-filter: blur(20px);
-					border-width: 1px;
-					border-color: rgba(0, 0, 0);
-					padding: 0.25rem 0.75rem;
-					display: flex;
-					flex-direction: row;
-					align-items: center;
-					background-color: rgb(229, 229, 229);
-					border-radius: 9999px;
-				}
+			p {
+				text-wrap: pretty;
 			}
 			@media (prefers-reduced-motion: reduce) {
 				html {
 					scroll-behavior: auto;
-				}
-			}
-			@media (prefers-color-scheme: dark) {
-				body {
-					color: rgba(255, 255, 255, 0.9);
-				}
-				@keyframes blur {
-					from {
-						border: 0px;
-					}
-					to {
-						box-shadow:
-							0px 5px 50px -5px rgba(0, 0, 0, 0.1),
-							0px 0px 0 1px rgba(0, 0, 0, 0.3);
-						background: rgba(0, 0, 0, 0.3);
-						backdrop-filter: blur(20px);
-						border-width: 1px;
-						border-color: rgba(0, 0, 0);
-						padding-left: 0.75rem;
-						padding-right: 0.75rem;
-						padding-top: 0.25rem;
-						padding-bottom: 0.25rem;
-						display: flex;
-						flex-direction: row;
-						align-items: center;
-						background-color: rgba(0, 0, 0, 0.3);
-						border-radius: 9999px;
-					}
 				}
 			}
 		</style>
