@@ -1,5 +1,6 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro";
+import Up from "../icons/Up.astro";
 
 const navItems = [
 	{
@@ -44,25 +45,48 @@ const navItems = [
 		}
 		<ThemeToggle />
 	</nav>
+	<a
+		id="goHome"
+		aria-label="home"
+		href="/#home"
+		class="fixed bottom-4 right-4 z-10 py-2 px-2 hidden
+		border
+		rounded-full
+		text-gray-200
+		bg-blue-500/90
+		border-gray-400
+		hover:bg-blue-500/70
+		dark:text-black
+		dark:bg-yellow-300/90
+		dark:hover:bg-yellow-300/70"
+	>
+		<Up />
+	</a>
 </header>
 
 <script>
 	document.addEventListener("astro:page-load", () => {
 		const sections = document.querySelectorAll("section");
 		const navItems = document.querySelectorAll("header nav a");
+		const goHomeItem = document.querySelector("#goHome");
 
 		const callback = (entries: any[]) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					navItems.forEach((item) => {
 						if (item.getAttribute("aria-label") == entry.target.id) {
-							item.classList.add("text-blue-600");
-							item.classList.add("dark:text-yellow-300");
+							item.classList.add("text-blue-600", "dark:text-yellow-300");
 						} else {
-							item.classList.remove("text-blue-600");
-							item.classList.remove("dark:text-yellow-300");
+							item.classList.remove("text-blue-600", "dark:text-yellow-300");
 						}
 					});
+					if (goHomeItem) {
+						if (goHomeItem.getAttribute("aria-label") == entry.target.id) {
+							goHomeItem.classList.add("hidden");
+						} else {
+							goHomeItem.classList.remove("hidden");
+						}
+					}
 				}
 			});
 		};
@@ -98,7 +122,7 @@ const navItems = [
 	}
 	@keyframes nav-shadown {
 		to {
-			@apply shadow-lg ring-1 backdrop-blur bg-gray-500/40;
+			@apply shadow-lg backdrop-blur bg-gray-500/40;
 		}
 	}
 </style>

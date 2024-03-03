@@ -1,47 +1,48 @@
 ---
+import FileDownload from "../icons/FileDownload.astro";
+import GitHubIcon from "../icons/GitHub.astro";
 import LinkedInIcon from "../icons/LinkedIn.astro";
 import MailIcon from "../icons/Mail.astro";
-import GitHubIcon from "../icons/GitHub.astro";
 import Badge from "./Badge.astro";
 import SocialLink from "./SocialLink.astro";
 ---
 
 <div class="max-w-xl">
-	<div class="mb-4 flex gap-4">
+	<div class="mb-4 flex gap-4 items-center">
 		<img
-			class="rounded-full shadow-lg size-16"
+			class="rounded-full shadow-lg"
+			style="width: 6rem; height: 6rem;	aspect-ratio: 1/1;"
 			src="/images/photo.webp"
 			alt="MaxiV95"
 		/>
-		<a
-			href="https://www.linkedin.com/in/maximilianovanmegroot/"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="flex items-center transition md:justify-center md:hover:scale-105"
+		<h1
+			class="text-4xl font-bold tracking-tight sm:text-5xl text-gray-800 dark:text-white"
 		>
-			<Badge>Disponible para trabajar</Badge>
-		</a>
+			Hi! I'm Maximiliano Van Megroot
+		</h1>
 	</div>
-	<h1
-		class="text-4xl font-bold tracking-tight sm:text-5xl text-gray-800 dark:text-white"
+	<div
+		class="mt-5 text-xl text-gray-800 dark:text-gray-300 [&>p>strong]:font-semibold [&>p>strong]:text-blue-600 dark:[&>p>strong]:text-yellow-300"
 	>
-		Hi! 👋 I'm Maximiliano Van Megroot
-	</h1>
-	<p
-		class="mt-6 text-xl text-gray-800 dark:text-gray-300 [&>strong]:font-semibold [&>strong]:text-blue-600 dark:[&>strong]:text-yellow-300 text-pretty"
-	>
-		Resolución de problemas y atención al detalle.<br />
-		<strong>Full Stack Web Developer</strong> de Córdoba, Argentina.<br />
-		Especializado en el desarrollo de aplicaciones web.
-	</p>
+		<p class="mb-[6px] leading-5">Resolución de problemas y atención al detalle.</p>
+		<p class="mb-[6px] leading-5" ><strong>Full Stack Web Developer</strong> - Córdoba, Argentina.</p>
+		<p class="mb-[6px] leading-5">Especializado en el desarrollo de aplicaciones web.</p>
+	</div>
 	<nav class="mt-8 flex flex-wrap gap-4">
-		<SocialLink href="https://www.linkedin.com/in/maximilianovanmegroot/">
+		<Badge href="https://www.linkedin.com/in/maximilianovanmegroot/">
 			<LinkedInIcon class="size-4" />
 			LinkedIn
-		</SocialLink>
+		</Badge>
 		<SocialLink href="https://github.com/MaxiV95">
 			<GitHubIcon class="size-4" />
 			GitHub
+		</SocialLink>
+		<SocialLink
+			href="/Maximiliano_Van_Megroot_CV-03-24.pdf"
+			download="Maximiliano_Van_Megroot_CV-03-24.pdf"
+		>
+			<FileDownload class="size-4" />
+			CV
 		</SocialLink>
 		<SocialLink href="mailto:maximilianovanmegroot@gmail.com">
 			<MailIcon class="size-4" />
