@@ -3,27 +3,58 @@ import ProjectsItem from "./ProjectsItem.astro";
 import { TAGS } from "../icons/tagsTechnologies";
 
 const PROJECTS = [
-	{
-		title: "Api Blog",
+{
+		title: "PetPalGroup",
 		description:
-			"Aplicación para: buscar, crear, editar, filtrar y ordenar recetas. Es un sitio web dinámico con estilos en CSS en cascada. Consumo de API del sitio web Spoonacular y sustentación de información en base de datos. Extra; botón para cambiar la paleta de colores.",
+			"Aplicación web diseñada para proporcionar a los dueños de mascotas una herramienta para el cuidado, seguimiento y localización de sus compañeros peludos. Los códigos QR pueden ser una herramienta eficaz para ayudar a encontrar a las mascotas perdidas. Creado junto a un grupo de programadores en las practicas de No-Country",
 		tags: [
+			TAGS.Git,
+			TAGS.GitHub,
+			TAGS.Node,
+			TAGS.JavaScript,
+			TAGS.React,
+			TAGS.Zustand,
+			TAGS.Express,
+			TAGS.MongoDB,
+			TAGS.Mocha,
+			TAGS.Chai,
+		],
+		image: "/projects/petPalGroupImg.webp",
+		github: "https://github.com/No-Country/c16-17-t-node-react",
+		link: "https://petpalfront.netlify.app/",
+	},
+	{
+		title: "Recipes Finder",
+		description:
+			"Aplicación para búsqueda de recetas. Este sitio web lo cree al finalizar mis estudios en HENRY. Cuenta con servidor y guardado de recetas personales en PostgreSQL .",
+		tags: [
+			TAGS.Git,
+			TAGS.GitHub,
 			TAGS.Node,
 			TAGS.JavaScript,
 			TAGS.React,
 			TAGS.Redux,
 			TAGS.Express,
 			TAGS.PostgreSQL,
+			TAGS.Mocha,
+			TAGS.Chai,
 		],
 		image: "/projects/foodImg.webp",
 		github: "https://github.com/MaxiV95/PI-Food",
 		link: "",
 	},
 	{
-		title: "Blog",
+		title: "Api Blog",
 		description:
-			"API con funcionalidades de CRUD completo para un blog. Este proyecto abarca desde el registro y autenticación de usuarios, gestión de administradores hasta la interacción con una base de datos MongoDB. Además, incorporé características avanzadas como un chat en vivo implementado con Sockets y un bot de eventos que utiliza Webhooks de Github para notificar automáticamente cambios relevantes en un canal de Discord.",
-		tags: [TAGS.Node, TAGS.TypeScript, TAGS.Nest, TAGS.MongoDB],
+			"API con funcionalidades de CRUD completo para un blog. Este proyecto lo cree al finalizar mis estudios en CódigoFacilito. Cuenta con registro y autenticación de usuarios, gestión de administradores. MongoDB para base de datos. Incluye chat en vivo implementado con Sockets y un bot de eventos que utiliza Webhooks de Github para notificar automáticamente cambios relevantes en un canal de Discord.",
+		tags: [
+			TAGS.Git,
+			TAGS.GitHub,
+			TAGS.Node,
+			TAGS.TypeScript,
+			TAGS.Nest,
+			TAGS.MongoDB,
+		],
 		image: "/projects/blogImg.webp",
 		github: "https://github.com/MaxiV95/tpf-blog",
 		link: "",
