@@ -70,6 +70,28 @@ const fbAppId = "1798923197";
 					scroll-behavior: auto;
 				}
 			}
+
+			.animate {
+				view-timeline-name: --section;
+				view-timeline: block;
+				animation-timeline: --section;
+				animation-name: show;
+				animation-range: 5% cover 30%;
+				animation-fill-mode: both;
+				transition:
+					opacity 2s linear,
+					transform 2s linear;
+			}
+			@keyframes show {
+				from {
+					opacity: 0;
+					scale: 50%;
+				}
+				to {
+					opacity: 1;
+					transform: 100%;
+				}
+			}
 		</style>
 	</body>
 </html>
