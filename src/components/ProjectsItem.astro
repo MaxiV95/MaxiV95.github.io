@@ -1,7 +1,7 @@
 ---
 import SocialLink from "./SocialLink.astro";
-import GitHub from "../icons/GitHub.astro";
-import Link from "../icons/Link.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import LinkIcon from "../icons/Link.astro";
 import { type Tag } from "../icons/tagsTechnologies";
 
 interface Props {
@@ -47,7 +47,7 @@ const { title, description, tags, image, github, link } = Astro.props;
 			{
 				github && (
 					<SocialLink href={github}>
-						<GitHub class="size-6" />
+						<GitHubIcon class="size-6" />
 						Code
 					</SocialLink>
 				)
@@ -55,7 +55,7 @@ const { title, description, tags, image, github, link } = Astro.props;
 			{
 				link && (
 					<SocialLink href={link}>
-						<Link class="size-4" />
+						<LinkIcon class="size-4" />
 						Preview
 					</SocialLink>
 				)

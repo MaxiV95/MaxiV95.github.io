@@ -5,9 +5,10 @@ import Hero from "../components/Hero.astro";
 import Experience from "../components/Experience.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Projects from "../components/Projects.astro";
-import Briefcase from "../icons/Briefcase.astro";
+import BriefcaseIcon from "../icons/Briefcase.astro";
 import CodeIcon from "../icons/Code.astro";
-import ProfileCheck from "../icons/ProfileCheck.astro";
+import ProfileCheckIcon from "../icons/ProfileCheck.astro";
+import DownLinesIcon from "../icons/DownLines.astro";
 ---
 
 <Layout
@@ -15,15 +16,22 @@ import ProfileCheck from "../icons/ProfileCheck.astro";
 	description="Contrata a Maximiliano para crear tu aplicación web única. Programador - Desarrollador Web Full Stack - Back End."
 >
 	<main class="px-4">
-		<SectionContainer id="home" class="active pt-[12rem] md:pt-[16rem] pb-[12rem]">
+		<SectionContainer
+			id="home"
+			class="active pt-[10rem] pb-[7rem] md:pt-[14rem] md:pb-[11rem]"
+		>
 			<Hero />
 		</SectionContainer>
+
+		<DownLinesIcon
+			class="size-8 animate-bounce flex w-full justify-center text-black/80 dark:text-white"
+		/>
 
 		<SectionContainer id="experience" class="pt-16 pb-0">
 			<h2
 				class="mb-6 flex gap-x-3 items-center text-3xl font-semibold text-black/80 dark:text-white"
 			>
-				<Briefcase class="size-8" />
+				<BriefcaseIcon class="size-8" />
 				Experience
 			</h2>
 			<Experience />
@@ -43,7 +51,7 @@ import ProfileCheck from "../icons/ProfileCheck.astro";
 			<h2
 				class="mb-6 flex gap-x-3 items-center text-3xl font-semibold text-black/80 dark:text-white"
 			>
-				<ProfileCheck class="size-8" />
+				<ProfileCheckIcon class="size-8" />
 				About me
 			</h2>
 			<AboutMe />

@@ -1,6 +1,6 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro";
-import Up from "../icons/Up.astro";
+import UpIcon from "../icons/Up.astro";
 
 const navItems = [
 	{
@@ -60,7 +60,7 @@ const navItems = [
 		dark:bg-yellow-300/90
 		dark:hover:bg-yellow-300/70"
 	>
-		<Up />
+		<UpIcon />
 	</a>
 </header>
 
@@ -101,7 +101,7 @@ const navItems = [
 			observer.observe(section);
 		});
 
-		// Cleanup function
+		// CleanupIcon function
 		document.onvisibilitychange = () => {
 			if (document.visibilityState === "hidden") {
 				observer.disconnect();
