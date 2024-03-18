@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Ejecutar npm run build
+npm run build
+
+# Asegurarse de que el código construido se ha agregado al área de preparación
+git add .
+
+# Continuar con el commit
+exit 0
