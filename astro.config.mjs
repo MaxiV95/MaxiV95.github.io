@@ -7,5 +7,6 @@ export default defineConfig({
 	outDir: "./docs",
 	build: {
 		assets: "a",
+		assetsPrefix: ".",
 	},
 });
