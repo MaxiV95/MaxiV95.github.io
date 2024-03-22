@@ -16,6 +16,18 @@ export const TAGS: { [key: string]: Tag } = {
 		name: "Node",
 		url: "https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white",
 	},
+	Html: {
+		name: "HTML",
+		url: "https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=HTML&logoColor=white",
+	},
+	Css: {
+		name: "CSS",
+		url: "https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=CSS&logoColor=white",
+	},
+	Tailwind: {
+		name: "CSS",
+		url: "https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white",
+	},
 	JavaScript: {
 		name: "JavaScript",
 		url: "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white",
